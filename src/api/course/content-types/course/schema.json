@@ -10,27 +10,15 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
-    "CourseName": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
+    "Name": {
+      "pluginOptions": {},
       "type": "string",
       "required": true
     },
     "School": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
+      "pluginOptions": {},
       "type": "enumeration",
       "enum": [
         "School of Computing Sciences",
@@ -48,11 +36,12 @@
       "mappedBy": "course"
     },
     "CourseID": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
+      "pluginOptions": {},
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ArabicName": {
       "type": "string",
       "required": true
     }
