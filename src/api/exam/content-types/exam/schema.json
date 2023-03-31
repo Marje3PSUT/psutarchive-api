@@ -20,7 +20,7 @@
     },
     "file": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "allowedTypes": [
         "images",
@@ -39,18 +39,11 @@
       ],
       "required": true
     },
-    "semester": {
-      "pluginOptions": {},
-      "type": "enumeration",
-      "enum": [
-        "fall",
-        "spring",
-        "summer"
-      ]
-    },
-    "year": {
-      "pluginOptions": {},
-      "type": "integer"
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "past-papers.paper-info",
+      "required": true
     }
   }
 }
