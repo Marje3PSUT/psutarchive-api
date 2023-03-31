@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quizzes",
+  "info": {
+    "singularName": "quiz",
+    "pluralName": "quizzes",
+    "displayName": "Quizzes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "quizzes"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "QuizNumber": {
+      "type": "integer",
+      "required": false
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "past-papers.paper-info",
+      "required": true
+    }
+  }
+}
