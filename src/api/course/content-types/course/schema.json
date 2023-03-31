@@ -44,6 +44,12 @@
     "ArabicName": {
       "type": "string",
       "required": true
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quiz.quiz",
+      "mappedBy": "course"
     }
   }
 }
