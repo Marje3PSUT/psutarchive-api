@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "exams",
+  "collectionName": "quizzes",
   "info": {
-    "singularName": "exam",
-    "pluralName": "exams",
-    "displayName": "Exams",
+    "singularName": "quiz",
+    "pluralName": "quizzes",
+    "displayName": "Quizzes",
     "description": ""
   },
   "options": {
@@ -16,28 +16,20 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::course.course",
-      "inversedBy": "exams"
+      "inversedBy": "quizzes"
     },
     "file": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
       "allowedTypes": [
         "images",
         "files"
       ],
-      "pluginOptions": {}
-    },
-    "type": {
-      "pluginOptions": {},
-      "type": "enumeration",
-      "enum": [
-        "first",
-        "second",
-        "midterm",
-        "final"
-      ],
+      "type": "media",
+      "multiple": false,
       "required": true
+    },
+    "QuizNumber": {
+      "type": "integer",
+      "required": false
     },
     "info": {
       "type": "component",
