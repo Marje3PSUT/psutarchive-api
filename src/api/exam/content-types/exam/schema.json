@@ -34,7 +34,7 @@
       ],
       "required": true
     },
-    "Metadeta": {
+    "Metadata": {
       "type": "component",
       "repeatable": false,
       "component": "material.paper-info",
