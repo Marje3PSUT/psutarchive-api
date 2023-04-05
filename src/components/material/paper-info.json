@@ -1,21 +1,21 @@
 {
   "collectionName": "components_past_papers_paper_infos",
   "info": {
-    "displayName": "paper-info",
+    "displayName": "metadeta",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "year": {
+    "Year": {
       "type": "integer",
       "required": true
     },
-    "semester": {
+    "Semester": {
       "type": "enumeration",
       "enum": [
-        "fall",
-        "spring",
-        "summer"
+        "Fall",
+        "Spring",
+        "Summer"
       ],
       "required": true
     }
