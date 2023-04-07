@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "File": {
+    "Files": {
       "type": "media",
       "multiple": true,
       "required": true,
