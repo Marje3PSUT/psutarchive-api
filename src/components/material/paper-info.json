@@ -18,6 +18,10 @@
         "Summer"
       ],
       "required": true
+    },
+    "Email": {
+      "type": "string",
+      "private": true
     }
   }
 }
