@@ -8,7 +8,9 @@
   "attributes": {
     "Year": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "min": 2010,
+      "max": 2023
     },
     "Semester": {
       "type": "enumeration",
