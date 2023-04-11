@@ -29,11 +29,10 @@
       ],
       "required": true
     },
-    "exams": {
+    "Exams": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::exam.exam",
-      "mappedBy": "course"
+      "target": "api::exam.exam"
     },
     "CourseID": {
       "pluginOptions": {},
@@ -45,11 +44,23 @@
       "type": "string",
       "required": true
     },
-    "quizzes": {
+    "RecordingsLink": {
+      "type": "string"
+    },
+    "Notes": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::quiz.quiz",
-      "mappedBy": "course"
+      "target": "api::notes.notes"
+    },
+    "RelatedCourses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    },
+    "AltNames": {
+      "type": "component",
+      "repeatable": true,
+      "component": "courses.alt-names"
     }
   }
 }

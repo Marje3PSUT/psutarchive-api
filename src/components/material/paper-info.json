@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_past_papers_paper_infos",
+  "info": {
+    "displayName": "metadata",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Year": {
+      "type": "integer",
+      "required": true,
+      "min": 2010,
+      "max": 2023
+    },
+    "Semester": {
+      "type": "enumeration",
+      "enum": [
+        "Fall",
+        "Spring",
+        "Summer"
+      ],
+      "required": true
+    },
+    "Uploader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "material.uploader"
+    }
+  }
+}

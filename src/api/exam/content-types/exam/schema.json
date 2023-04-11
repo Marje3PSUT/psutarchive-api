@@ -12,13 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "course": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::course.course",
-      "inversedBy": "exams"
-    },
-    "file": {
+    "Files": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -28,21 +22,27 @@
       ],
       "pluginOptions": {}
     },
-    "type": {
+    "Type": {
       "pluginOptions": {},
       "type": "enumeration",
       "enum": [
-        "first",
-        "second",
-        "midterm",
-        "final"
+        "First",
+        "Second",
+        "Midterm",
+        "Final",
+        "Quiz"
       ],
       "required": true
     },
-    "info": {
+    "Metadata": {
       "type": "component",
       "repeatable": false,
-      "component": "past-papers.paper-info",
+      "component": "material.paper-info",
+      "required": true
+    },
+    "Solved": {
+      "type": "boolean",
+      "default": false,
       "required": true
     }
   }
