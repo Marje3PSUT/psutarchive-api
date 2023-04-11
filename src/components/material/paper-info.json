@@ -21,13 +21,10 @@
       ],
       "required": true
     },
-    "Email": {
-      "type": "string",
-      "private": true,
-      "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
-    },
-    "Name": {
-      "type": "string"
+    "Uploader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "material.uploader"
     }
   }
 }
