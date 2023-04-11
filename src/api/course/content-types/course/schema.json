@@ -51,6 +51,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::notes.notes"
+    },
+    "RelatedCourses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
     }
   }
 }
