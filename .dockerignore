@@ -1,0 +1,7 @@
+.tmp/ # comment this out if you want to include the local db
+.cache/
+.git/
+build/
+node_modules/
+.env
+data/
