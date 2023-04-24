@@ -32,6 +32,24 @@ npm run build
 yarn build
 ```
 
+## Developing from the Docker Image (SQLite)
+
+1. Make sure Docker is installed on your system, or get it [from here](https://docs.docker.com/get-docker/).
+
+2. Generate random base64 strings ([from here](https://generate.plus/en/base64)) then replace 'tobemodified' in `.env.example` with these strings. Then rename it to `.env` or `cat .env.example > .env`.
+
+3. Build the docker image
+   
+   ```sh
+   docker build . -t psutarchive-api-dev
+   ```
+
+4. Run the docker container and pass `.env`
+   
+   ```sh
+   docker run -p 1337:1337 --env-file .env psutarchive-api-dev:latest
+   ```
+
 ## ⚙️ Deployment
 
 Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
