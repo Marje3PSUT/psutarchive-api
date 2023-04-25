@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_notes",
+  "info": {
+    "singularName": "notes",
+    "pluralName": "all-notes",
+    "displayName": "Notes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Files": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "material.paper-info"
+    }
+  }
+}

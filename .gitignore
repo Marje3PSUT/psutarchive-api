@@ -70,7 +70,8 @@ $RECYCLE.BIN/
 *.sql
 *.sqlite
 *.sqlite3
-
+*.db
+*.db-journal
 
 ############################
 # Misc.

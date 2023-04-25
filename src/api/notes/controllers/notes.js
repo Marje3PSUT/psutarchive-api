@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * quiz controller
+ * notes controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::quiz.quiz');
+module.exports = createCoreController('api::notes.notes');

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_courses_alt_names",
+  "info": {
+    "displayName": "AltNames"
+  },
+  "options": {},
+  "attributes": {
+    "AltName": {
+      "type": "string"
+    }
+  }
+}
