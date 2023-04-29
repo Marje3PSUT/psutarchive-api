@@ -1,7 +1,8 @@
-.tmp/ # comment this out if you want to include the local db
+.tmp/
 .cache/
 .git/
 build/
 node_modules/
 .env
 data/
+**/*.db
