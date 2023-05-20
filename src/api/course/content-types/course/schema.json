@@ -17,18 +17,6 @@
       "type": "string",
       "required": true
     },
-    "School": {
-      "pluginOptions": {},
-      "type": "enumeration",
-      "enum": [
-        "School of Computing Sciences",
-        "School of Engineering",
-        "School of Business Technology",
-        "School of Graduate Studies & Scientific Research",
-        "Elective Course"
-      ],
-      "required": true
-    },
     "Exams": {
       "type": "relation",
       "relation": "oneToMany",
