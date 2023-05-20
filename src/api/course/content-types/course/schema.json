@@ -49,6 +49,11 @@
       "type": "component",
       "repeatable": true,
       "component": "courses.alt-names"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   }
 }
