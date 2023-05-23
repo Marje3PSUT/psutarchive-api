@@ -5,7 +5,7 @@ module.exports = (policyContext, config, { strapi }) => {
         obj = JSON.parse(obj);
     }
 
-    console.log(obj);
+    //console.log(obj);
 
     delete obj['publishedAt'];
     policyContext.request.body.data = JSON.stringify(Object.assign(obj, { publishedAt: null }));
