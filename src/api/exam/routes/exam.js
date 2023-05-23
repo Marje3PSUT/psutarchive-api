@@ -6,4 +6,10 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::exam.exam');
+module.exports = createCoreRouter('api::exam.exam', {
+    config: {
+        create: {
+            policies: ['global::create-draft']
+        }
+    }
+});
