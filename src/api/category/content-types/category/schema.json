@@ -12,9 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "CategoryName": {
+    "Name": {
       "type": "string",
-      "private": true,
       "required": true
     }
   }
