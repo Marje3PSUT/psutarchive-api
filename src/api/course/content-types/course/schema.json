@@ -50,10 +50,11 @@
       "repeatable": true,
       "component": "courses.alt-names"
     },
-    "Category": {
+    "category": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "courses"
     }
   }
 }

@@ -25,6 +25,12 @@
       "required": true,
       "maxLength": 7,
       "targetField": "Name"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "category"
     }
   }
 }
