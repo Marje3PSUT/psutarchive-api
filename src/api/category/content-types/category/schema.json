@@ -4,7 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category",
+    "displayName": "Categories",
     "description": ""
   },
   "options": {
@@ -12,19 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "ArabicName": {
+    "name_ar": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "Abbreviation": {
+    "abbreviation": {
       "type": "uid",
       "required": true,
       "maxLength": 7,
-      "targetField": "Name"
+      "targetField": "name"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course",
+      "mappedBy": "category"
     }
   }
 }

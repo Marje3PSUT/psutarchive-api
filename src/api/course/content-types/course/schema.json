@@ -12,48 +12,53 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "pluginOptions": {},
-      "type": "string",
-      "required": true
-    },
-    "Exams": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::exam.exam"
-    },
-    "CourseID": {
+    "name": {
       "pluginOptions": {},
       "type": "string",
       "required": true,
       "unique": true
     },
-    "ArabicName": {
-      "type": "string",
-      "required": true
-    },
-    "RecordingsLink": {
-      "type": "string"
-    },
-    "Notes": {
+    "exams": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::notes.notes"
+      "target": "api::exam.exam",
+      "mappedBy": "course"
     },
-    "RelatedCourses": {
+    "course_id": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name_ar": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "recordings_url": {
+      "type": "string"
+    },
+    "related_courses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::course.course"
     },
-    "AltNames": {
+    "alt_names": {
       "type": "component",
       "repeatable": true,
       "component": "courses.alt-names"
     },
-    "Category": {
+    "category": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "courses"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note",
+      "mappedBy": "course"
     }
   }
 }

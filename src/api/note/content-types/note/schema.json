@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "all_notes",
+  "collectionName": "notes",
   "info": {
-    "singularName": "notes",
-    "pluralName": "all-notes",
+    "singularName": "note",
+    "pluralName": "notes",
     "displayName": "Notes",
     "description": ""
   },
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Files": {
+    "files": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -21,14 +21,17 @@
         "files"
       ]
     },
-    "Name": {
-      "type": "string",
-      "required": true
-    },
-    "Metadata": {
+    "metadata": {
       "type": "component",
       "repeatable": false,
-      "component": "material.paper-info"
+      "component": "material.paper-info",
+      "required": false
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "notes"
     }
   }
 }

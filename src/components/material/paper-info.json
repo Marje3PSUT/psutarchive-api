@@ -6,13 +6,13 @@
   },
   "options": {},
   "attributes": {
-    "Year": {
+    "year": {
       "type": "integer",
       "required": true,
       "min": 2010,
       "max": 2023
     },
-    "Semester": {
+    "semester": {
       "type": "enumeration",
       "enum": [
         "Fall",
@@ -21,7 +21,7 @@
       ],
       "required": true
     },
-    "Uploader": {
+    "uploader": {
       "type": "component",
       "repeatable": false,
       "component": "material.uploader"
