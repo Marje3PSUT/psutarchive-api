@@ -44,6 +44,12 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "exams"
     }
   }
 }

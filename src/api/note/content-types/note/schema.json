@@ -26,6 +26,12 @@
       "repeatable": false,
       "component": "material.paper-info",
       "required": false
+    },
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::course.course",
+      "inversedBy": "notes"
     }
   }
 }
