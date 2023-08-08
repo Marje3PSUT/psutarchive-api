@@ -12,35 +12,37 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "pluginOptions": {},
-      "type": "string",
-      "required": true
-    },
-    "Exams": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::exam.exam"
-    },
-    "CourseID": {
+    "name": {
       "pluginOptions": {},
       "type": "string",
       "required": true,
       "unique": true
     },
-    "ArabicName": {
-      "type": "string",
-      "required": true
+    "exams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exam.exam"
     },
-    "RecordingsLink": {
+    "course_id": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name_ar": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "recordings_url": {
       "type": "string"
     },
-    "RelatedCourses": {
+    "related_courses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::course.course"
     },
-    "AltNames": {
+    "alt_names": {
       "type": "component",
       "repeatable": true,
       "component": "courses.alt-names"
@@ -51,7 +53,7 @@
       "target": "api::category.category",
       "inversedBy": "courses"
     },
-    "Notes": {
+    "notes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::note.note"

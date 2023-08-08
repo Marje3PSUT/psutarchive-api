@@ -4,23 +4,24 @@
   "info": {
     "singularName": "note",
     "pluralName": "notes",
-    "displayName": "Notes"
+    "displayName": "Notes",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Files": {
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
-    "Metadata": {
+    "metadata": {
       "type": "component",
       "repeatable": false,
       "component": "material.paper-info",

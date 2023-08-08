@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Files": {
+    "files": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -22,7 +22,7 @@
       ],
       "pluginOptions": {}
     },
-    "Type": {
+    "type": {
       "pluginOptions": {},
       "type": "enumeration",
       "enum": [
@@ -34,13 +34,13 @@
       ],
       "required": true
     },
-    "Metadata": {
+    "metadata": {
       "type": "component",
       "repeatable": false,
       "component": "material.paper-info",
       "required": true
     },
-    "Solved": {
+    "is_solved": {
       "type": "boolean",
       "default": false,
       "required": true

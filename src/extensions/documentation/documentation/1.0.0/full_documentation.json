@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-08T18:39:26.651Z"
+    "x-generation-date": "2023-08-08T19:30:13.709Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -94,19 +94,19 @@
         "properties": {
           "data": {
             "required": [
-              "Name",
-              "ArabicName",
-              "Abbreviation"
+              "name",
+              "name_ar",
+              "abbreviation"
             ],
             "type": "object",
             "properties": {
-              "Name": {
+              "name": {
                 "type": "string"
               },
-              "ArabicName": {
+              "name_ar": {
                 "type": "string"
               },
-              "Abbreviation": {
+              "abbreviation": {
                 "type": "string"
               },
               "courses": {
@@ -176,18 +176,18 @@
       "Category": {
         "type": "object",
         "required": [
-          "Name",
-          "ArabicName",
-          "Abbreviation"
+          "name",
+          "name_ar",
+          "abbreviation"
         ],
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "ArabicName": {
+          "name_ar": {
             "type": "string"
           },
-          "Abbreviation": {
+          "abbreviation": {
             "type": "string"
           },
           "courses": {
@@ -204,10 +204,10 @@
                     "attributes": {
                       "type": "object",
                       "properties": {
-                        "Name": {
+                        "name": {
                           "type": "string"
                         },
-                        "Exams": {
+                        "exams": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -221,7 +221,7 @@
                                   "attributes": {
                                     "type": "object",
                                     "properties": {
-                                      "Files": {
+                                      "files": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
@@ -845,7 +845,7 @@
                                           }
                                         }
                                       },
-                                      "Type": {
+                                      "type": {
                                         "type": "string",
                                         "enum": [
                                           "First",
@@ -855,16 +855,16 @@
                                           "Quiz"
                                         ]
                                       },
-                                      "Metadata": {
+                                      "metadata": {
                                         "type": "object",
                                         "properties": {
                                           "id": {
                                             "type": "number"
                                           },
-                                          "Year": {
+                                          "year": {
                                             "type": "integer"
                                           },
-                                          "Semester": {
+                                          "semester": {
                                             "type": "string",
                                             "enum": [
                                               "Fall",
@@ -872,23 +872,23 @@
                                               "Summer"
                                             ]
                                           },
-                                          "Uploader": {
+                                          "uploader": {
                                             "type": "object",
                                             "properties": {
                                               "id": {
                                                 "type": "number"
                                               },
-                                              "Name": {
+                                              "name": {
                                                 "type": "string"
                                               },
-                                              "Email": {
+                                              "email": {
                                                 "type": "string"
                                               }
                                             }
                                           }
                                         }
                                       },
-                                      "Solved": {
+                                      "is_solved": {
                                         "type": "boolean"
                                       },
                                       "createdAt": {
@@ -944,16 +944,16 @@
                             }
                           }
                         },
-                        "CourseID": {
+                        "course_id": {
                           "type": "string"
                         },
-                        "ArabicName": {
+                        "name_ar": {
                           "type": "string"
                         },
-                        "RecordingsLink": {
+                        "recordings_url": {
                           "type": "string"
                         },
-                        "RelatedCourses": {
+                        "related_courses": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -973,7 +973,7 @@
                             }
                           }
                         },
-                        "AltNames": {
+                        "alt_names": {
                           "type": "array",
                           "items": {
                             "type": "object",
@@ -999,13 +999,13 @@
                                 "attributes": {
                                   "type": "object",
                                   "properties": {
-                                    "Name": {
+                                    "name": {
                                       "type": "string"
                                     },
-                                    "ArabicName": {
+                                    "name_ar": {
                                       "type": "string"
                                     },
-                                    "Abbreviation": {
+                                    "abbreviation": {
                                       "type": "string"
                                     },
                                     "courses": {
@@ -1076,7 +1076,7 @@
                             }
                           }
                         },
-                        "Notes": {
+                        "notes": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -1090,7 +1090,7 @@
                                   "attributes": {
                                     "type": "object",
                                     "properties": {
-                                      "Files": {
+                                      "files": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
@@ -1232,16 +1232,16 @@
                                           }
                                         }
                                       },
-                                      "Metadata": {
+                                      "metadata": {
                                         "type": "object",
                                         "properties": {
                                           "id": {
                                             "type": "number"
                                           },
-                                          "Year": {
+                                          "year": {
                                             "type": "integer"
                                           },
-                                          "Semester": {
+                                          "semester": {
                                             "type": "string",
                                             "enum": [
                                               "Fall",
@@ -1249,16 +1249,16 @@
                                               "Summer"
                                             ]
                                           },
-                                          "Uploader": {
+                                          "uploader": {
                                             "type": "object",
                                             "properties": {
                                               "id": {
                                                 "type": "number"
                                               },
-                                              "Name": {
+                                              "name": {
                                                 "type": "string"
                                               },
-                                              "Email": {
+                                              "email": {
                                                 "type": "string"
                                               }
                                             }
@@ -1445,16 +1445,16 @@
         "properties": {
           "data": {
             "required": [
-              "Name",
-              "CourseID",
-              "ArabicName"
+              "name",
+              "course_id",
+              "name_ar"
             ],
             "type": "object",
             "properties": {
-              "Name": {
+              "name": {
                 "type": "string"
               },
-              "Exams": {
+              "exams": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -1468,16 +1468,16 @@
                   "example": "string or id"
                 }
               },
-              "CourseID": {
+              "course_id": {
                 "type": "string"
               },
-              "ArabicName": {
+              "name_ar": {
                 "type": "string"
               },
-              "RecordingsLink": {
+              "recordings_url": {
                 "type": "string"
               },
-              "RelatedCourses": {
+              "related_courses": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -1491,7 +1491,7 @@
                   "example": "string or id"
                 }
               },
-              "AltNames": {
+              "alt_names": {
                 "type": "array",
                 "items": {
                   "$ref": "#/components/schemas/CoursesAltNamesComponent"
@@ -1508,7 +1508,7 @@
                 ],
                 "example": "string or id"
               },
-              "Notes": {
+              "notes": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -1575,15 +1575,15 @@
       "Course": {
         "type": "object",
         "required": [
-          "Name",
-          "CourseID",
-          "ArabicName"
+          "name",
+          "course_id",
+          "name_ar"
         ],
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Exams": {
+          "exams": {
             "type": "object",
             "properties": {
               "data": {
@@ -1597,7 +1597,7 @@
                     "attributes": {
                       "type": "object",
                       "properties": {
-                        "Files": {
+                        "files": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -2221,7 +2221,7 @@
                             }
                           }
                         },
-                        "Type": {
+                        "type": {
                           "type": "string",
                           "enum": [
                             "First",
@@ -2231,16 +2231,16 @@
                             "Quiz"
                           ]
                         },
-                        "Metadata": {
+                        "metadata": {
                           "type": "object",
                           "properties": {
                             "id": {
                               "type": "number"
                             },
-                            "Year": {
+                            "year": {
                               "type": "integer"
                             },
-                            "Semester": {
+                            "semester": {
                               "type": "string",
                               "enum": [
                                 "Fall",
@@ -2248,23 +2248,23 @@
                                 "Summer"
                               ]
                             },
-                            "Uploader": {
+                            "uploader": {
                               "type": "object",
                               "properties": {
                                 "id": {
                                   "type": "number"
                                 },
-                                "Name": {
+                                "name": {
                                   "type": "string"
                                 },
-                                "Email": {
+                                "email": {
                                   "type": "string"
                                 }
                               }
                             }
                           }
                         },
-                        "Solved": {
+                        "is_solved": {
                           "type": "boolean"
                         },
                         "createdAt": {
@@ -2320,16 +2320,16 @@
               }
             }
           },
-          "CourseID": {
+          "course_id": {
             "type": "string"
           },
-          "ArabicName": {
+          "name_ar": {
             "type": "string"
           },
-          "RecordingsLink": {
+          "recordings_url": {
             "type": "string"
           },
-          "RelatedCourses": {
+          "related_courses": {
             "type": "object",
             "properties": {
               "data": {
@@ -2343,10 +2343,10 @@
                     "attributes": {
                       "type": "object",
                       "properties": {
-                        "Name": {
+                        "name": {
                           "type": "string"
                         },
-                        "Exams": {
+                        "exams": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -2366,16 +2366,16 @@
                             }
                           }
                         },
-                        "CourseID": {
+                        "course_id": {
                           "type": "string"
                         },
-                        "ArabicName": {
+                        "name_ar": {
                           "type": "string"
                         },
-                        "RecordingsLink": {
+                        "recordings_url": {
                           "type": "string"
                         },
-                        "RelatedCourses": {
+                        "related_courses": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -2395,7 +2395,7 @@
                             }
                           }
                         },
-                        "AltNames": {
+                        "alt_names": {
                           "type": "array",
                           "items": {
                             "type": "object",
@@ -2421,13 +2421,13 @@
                                 "attributes": {
                                   "type": "object",
                                   "properties": {
-                                    "Name": {
+                                    "name": {
                                       "type": "string"
                                     },
-                                    "ArabicName": {
+                                    "name_ar": {
                                       "type": "string"
                                     },
-                                    "Abbreviation": {
+                                    "abbreviation": {
                                       "type": "string"
                                     },
                                     "courses": {
@@ -2498,7 +2498,7 @@
                             }
                           }
                         },
-                        "Notes": {
+                        "notes": {
                           "type": "object",
                           "properties": {
                             "data": {
@@ -2512,7 +2512,7 @@
                                   "attributes": {
                                     "type": "object",
                                     "properties": {
-                                      "Files": {
+                                      "files": {
                                         "type": "object",
                                         "properties": {
                                           "data": {
@@ -2654,16 +2654,16 @@
                                           }
                                         }
                                       },
-                                      "Metadata": {
+                                      "metadata": {
                                         "type": "object",
                                         "properties": {
                                           "id": {
                                             "type": "number"
                                           },
-                                          "Year": {
+                                          "year": {
                                             "type": "integer"
                                           },
-                                          "Semester": {
+                                          "semester": {
                                             "type": "string",
                                             "enum": [
                                               "Fall",
@@ -2671,16 +2671,16 @@
                                               "Summer"
                                             ]
                                           },
-                                          "Uploader": {
+                                          "uploader": {
                                             "type": "object",
                                             "properties": {
                                               "id": {
                                                 "type": "number"
                                               },
-                                              "Name": {
+                                              "name": {
                                                 "type": "string"
                                               },
-                                              "Email": {
+                                              "email": {
                                                 "type": "string"
                                               }
                                             }
@@ -2793,7 +2793,7 @@
               }
             }
           },
-          "AltNames": {
+          "alt_names": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CoursesAltNamesComponent"
@@ -2816,7 +2816,7 @@
               }
             }
           },
-          "Notes": {
+          "notes": {
             "type": "object",
             "properties": {
               "data": {
@@ -2925,14 +2925,14 @@
         "properties": {
           "data": {
             "required": [
-              "Files",
-              "Type",
-              "Metadata",
-              "Solved"
+              "files",
+              "type",
+              "metadata",
+              "is_solved"
             ],
             "type": "object",
             "properties": {
-              "Files": {
+              "files": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -2946,7 +2946,7 @@
                   "example": "string or id"
                 }
               },
-              "Type": {
+              "type": {
                 "type": "string",
                 "enum": [
                   "First",
@@ -2956,10 +2956,10 @@
                   "Quiz"
                 ]
               },
-              "Metadata": {
+              "metadata": {
                 "$ref": "#/components/schemas/MaterialPaperInfoComponent"
               },
-              "Solved": {
+              "is_solved": {
                 "type": "boolean"
               }
             }
@@ -3015,13 +3015,13 @@
       "Exam": {
         "type": "object",
         "required": [
-          "Files",
-          "Type",
-          "Metadata",
-          "Solved"
+          "files",
+          "type",
+          "metadata",
+          "is_solved"
         ],
         "properties": {
-          "Files": {
+          "files": {
             "type": "object",
             "properties": {
               "data": {
@@ -3645,7 +3645,7 @@
               }
             }
           },
-          "Type": {
+          "type": {
             "type": "string",
             "enum": [
               "First",
@@ -3655,10 +3655,10 @@
               "Quiz"
             ]
           },
-          "Metadata": {
+          "metadata": {
             "$ref": "#/components/schemas/MaterialPaperInfoComponent"
           },
-          "Solved": {
+          "is_solved": {
             "type": "boolean"
           },
           "createdAt": {
@@ -3737,10 +3737,10 @@
           "id": {
             "type": "number"
           },
-          "Year": {
+          "year": {
             "type": "integer"
           },
-          "Semester": {
+          "semester": {
             "type": "string",
             "enum": [
               "Fall",
@@ -3748,16 +3748,16 @@
               "Summer"
             ]
           },
-          "Uploader": {
+          "uploader": {
             "type": "object",
             "properties": {
               "id": {
                 "type": "number"
               },
-              "Name": {
+              "name": {
                 "type": "string"
               },
-              "Email": {
+              "email": {
                 "type": "string"
               }
             }
@@ -3772,11 +3772,11 @@
         "properties": {
           "data": {
             "required": [
-              "Files"
+              "files"
             ],
             "type": "object",
             "properties": {
-              "Files": {
+              "files": {
                 "type": "array",
                 "items": {
                   "oneOf": [
@@ -3790,7 +3790,7 @@
                   "example": "string or id"
                 }
               },
-              "Metadata": {
+              "metadata": {
                 "$ref": "#/components/schemas/MaterialPaperInfoComponent"
               }
             }
@@ -3846,10 +3846,10 @@
       "Note": {
         "type": "object",
         "required": [
-          "Files"
+          "files"
         ],
         "properties": {
-          "Files": {
+          "files": {
             "type": "object",
             "properties": {
               "data": {
@@ -4473,7 +4473,7 @@
               }
             }
           },
-          "Metadata": {
+          "metadata": {
             "$ref": "#/components/schemas/MaterialPaperInfoComponent"
           },
           "createdAt": {
