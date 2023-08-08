@@ -35,11 +35,6 @@
     "RecordingsLink": {
       "type": "string"
     },
-    "Notes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::notes.notes"
-    },
     "RelatedCourses": {
       "type": "relation",
       "relation": "oneToMany",
@@ -55,6 +50,11 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "courses"
+    },
+    "Notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::note.note"
     }
   }
 }

@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "all_notes",
+  "collectionName": "notes",
   "info": {
-    "singularName": "notes",
-    "pluralName": "all-notes",
-    "displayName": "Notes",
-    "description": ""
+    "singularName": "note",
+    "pluralName": "notes",
+    "displayName": "Notes"
   },
   "options": {
     "draftAndPublish": true
@@ -13,22 +12,19 @@
   "pluginOptions": {},
   "attributes": {
     "Files": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ]
-    },
-    "Name": {
-      "type": "string",
+      ],
+      "type": "media",
+      "multiple": true,
       "required": true
     },
     "Metadata": {
       "type": "component",
       "repeatable": false,
-      "component": "material.paper-info"
+      "component": "material.paper-info",
+      "required": false
     }
   }
 }

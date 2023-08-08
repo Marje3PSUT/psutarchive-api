@@ -1,5 +1,5 @@
 {
-  "/all-notes": {
+  "/notes": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotesListResponse"
+                "$ref": "#/components/schemas/NoteListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Notes"
+        "Note"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/all-notes"
+      "operationId": "get/notes"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotesResponse"
+                "$ref": "#/components/schemas/NoteResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Notes"
+        "Note"
       ],
       "parameters": [],
-      "operationId": "post/all-notes",
+      "operationId": "post/notes",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/NotesRequest"
+              "$ref": "#/components/schemas/NoteRequest"
             }
           }
         }
       }
     }
   },
-  "/all-notes/{id}": {
+  "/notes/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotesResponse"
+                "$ref": "#/components/schemas/NoteResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Notes"
+        "Note"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/all-notes/{id}"
+      "operationId": "get/notes/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NotesResponse"
+                "$ref": "#/components/schemas/NoteResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Notes"
+        "Note"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/all-notes/{id}",
+      "operationId": "put/notes/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/NotesRequest"
+              "$ref": "#/components/schemas/NoteRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Notes"
+        "Note"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/all-notes/{id}"
+      "operationId": "delete/notes/{id}"
     }
   }
 }

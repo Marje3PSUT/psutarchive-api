@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * notes router
+ * note router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::notes.notes');
+module.exports = createCoreRouter('api::note.note');
