@@ -1,13 +1,14 @@
 {
   "name": "api",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "dev": "strapi build && strapi develop"
   },
   "devDependencies": {},
   "dependencies": {
