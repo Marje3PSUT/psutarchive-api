@@ -4,7 +4,7 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "Courses",
+    "displayName": "Course",
     "description": ""
   },
   "options": {
@@ -17,12 +17,6 @@
       "type": "string",
       "required": true,
       "unique": true
-    },
-    "exams": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::exam.exam",
-      "mappedBy": "course"
     },
     "course_id": {
       "pluginOptions": {},
@@ -54,10 +48,10 @@
       "target": "api::category.category",
       "inversedBy": "courses"
     },
-    "notes": {
+    "resources": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::note.note",
+      "target": "api::resource.resource",
       "mappedBy": "course"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_past_papers_paper_infos",
+  "collectionName": "components_material_metadata",
   "info": {
     "displayName": "metadata",
     "description": ""
@@ -19,7 +19,7 @@
         "Spring",
         "Summer"
       ],
-      "required": true
+      "required": false
     },
     "uploader": {
       "type": "component",

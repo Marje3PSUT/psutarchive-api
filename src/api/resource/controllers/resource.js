@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * note controller
+ * resource controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::note.note');
+module.exports = createCoreController('api::resource.resource');

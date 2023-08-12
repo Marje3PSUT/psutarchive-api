@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_material_exam_data",
+  "info": {
+    "displayName": "exam-data",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "first",
+        "second",
+        "midterm",
+        "final",
+        "quiz"
+      ],
+      "required": true
+    },
+    "is_solved": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_material_note_data",
+  "info": {
+    "displayName": "Note-data",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "lecture",
+        "summary",
+        "reference",
+        "practice",
+        "review",
+        "other"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
