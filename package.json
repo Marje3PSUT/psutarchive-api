@@ -1,7 +1,7 @@
 {
   "name": "api",
   "private": true,
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -19,7 +19,7 @@
     "better-sqlite3": "8.5.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Mo Mansour"
   },
   "strapi": {
     "uuid": "7657bc84-60c5-4a70-90be-189d1fcd4a25"
