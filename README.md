@@ -46,7 +46,7 @@ yarn build
    docker compose -f docker-compose.yml up
    ```
 
-### Build and run production from Docker 🐋 (Postgres)
+### Build and run production from Docker 🐋 (PostgreSQL)
 
 1. Make sure Docker is installed on your system, or get it [from here](https://docs.docker.com/get-docker/).
 
