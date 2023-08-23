@@ -22,7 +22,7 @@
       "required": true,
       "unique": true
     },
-    "abbreviation": {
+    "slug": {
       "type": "uid",
       "required": true,
       "maxLength": 7,

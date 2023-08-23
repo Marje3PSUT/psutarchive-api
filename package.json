@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "psut-archive-api",
   "private": true,
   "version": "2.0.0",
   "description": "A Strapi application",
