@@ -1,9 +1,9 @@
 version: '3'
 services:
   psutarchiveapi:
-    container_name: psutarchiveapi.prod
+    container_name: psutarchiveapi
     build: .
-    image: psutarchiveapi:latest
+    image: psutarchiveapi:production
     restart: unless-stopped
     env_file: .env
     environment:

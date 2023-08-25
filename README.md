@@ -37,7 +37,7 @@ yarn build
 3. Build the docker image
 
    ```sh
-   docker build -f Dockerfile .
+   docker build -f Dockerfile -t psutarchiveapi:development .
    ```
 
 4. Run the docker container
@@ -55,7 +55,7 @@ yarn build
 3. Build the docker image
 
    ```sh
-   docker build -f Dockerfile.prod .
+   docker build -f Dockerfile.prod -t psutarchiveapi:production .
    ```
 
 4. Run the docker container
