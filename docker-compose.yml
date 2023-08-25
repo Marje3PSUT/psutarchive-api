@@ -3,7 +3,7 @@ services:
   psutarchiveapi:
     container_name: psutarchiveapi
     build: .
-    image: psutarchiveapi:latest
+    image: psutarchiveapi:development
     restart: unless-stopped
     env_file: .env
     environment:
