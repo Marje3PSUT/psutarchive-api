@@ -34,13 +34,7 @@ yarn build
 
 2. Generate random base64 strings ([from here](https://generate.plus/en/base64)) then replace 'tobemodified' in `.env.example` with these strings. Then rename it to `.env` or `cat .env.example > .env`.
 
-3. Build the docker image
-
-   ```sh
-   docker build -f Dockerfile -t psutarchiveapi:development .
-   ```
-
-4. Run the docker container
+3. Run the docker container
 
    ```sh
    docker compose -f docker-compose.yml up
@@ -52,13 +46,7 @@ yarn build
 
 2. Generate random base64 strings ([from here](https://generate.plus/en/base64)) then replace 'tobemodified' in `.env.example` with these strings. Then rename it to `.env` or `cat .env.example > .env`.
 
-3. Build the docker image
-
-   ```sh
-   docker build -f Dockerfile.prod -t psutarchiveapi:production .
-   ```
-
-4. Run the docker container
+3. Run the docker container
 
    ```sh
    docker compose -f docker-compose.prod.yml up
