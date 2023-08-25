@@ -2,7 +2,9 @@ version: '3'
 services:
   psutarchiveapi:
     container_name: psutarchiveapi
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile.prod
     image: psutarchiveapi:production
     restart: unless-stopped
     env_file: .env
