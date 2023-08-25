@@ -6,6 +6,7 @@ services:
     image: psutarchiveapi:production
     restart: unless-stopped
     env_file: .env
+    user: root
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
       DATABASE_HOST: psutarchiveapiDB
