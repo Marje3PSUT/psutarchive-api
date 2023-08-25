@@ -11,6 +11,7 @@ services:
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
       TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
       NODE_ENV: development
+      DATABASE_CLIENT: sqlite
     volumes:
       - ./config:/opt/app/config
       - ./src:/opt/app/src

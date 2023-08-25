@@ -2,9 +2,6 @@ const path = require('path');
 
 module.exports = ({ env }) => {
   let client = env('DATABASE_CLIENT', 'sqlite');
-  if (env('NODE_ENV', 'development')){
-    client = 'sqlite'
-  }
 
   const connections = {
     mysql: {
