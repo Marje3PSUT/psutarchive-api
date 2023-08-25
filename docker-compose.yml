@@ -1,0 +1,30 @@
+version: '3'
+services:
+  psutarchiveapi:
+    container_name: psutarchiveapi
+    build: .
+    image: psutarchiveapi:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      JWT_SECRET: ${JWT_SECRET}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
+      NODE_ENV: development
+    volumes:
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock
+
+      - ./.env:/opt/app/.env
+      - ./public/uploads:/opt/app/public/uploads
+    ports:
+      - ${PORT}:${PORT}
+    networks:
+      - psutarchiveapi
+    
+networks:
+  psutarchiveapi:
+    name: Psutarchiveapi
+    driver: bridge
