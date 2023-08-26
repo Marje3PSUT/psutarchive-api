@@ -7,18 +7,9 @@ services:
       dockerfile: Dockerfile.prod
     image: psutarchiveapi:production
     restart: unless-stopped
-    env_file: .env
     user: root
     environment:
-      DATABASE_CLIENT: ${DATABASE_CLIENT}
       DATABASE_HOST: psutarchiveapiDB
-      DATABASE_NAME: ${DATABASE_NAME}
-      DATABASE_USERNAME: ${DATABASE_USERNAME}
-      DATABASE_PORT: ${DATABASE_PORT}
-      JWT_SECRET: ${JWT_SECRET}
-      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
-      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       NODE_ENV: production
     volumes:
       - ./config:/opt/app/config
@@ -50,7 +41,7 @@ services:
       #- ./data:/var/lib/postgresql/data/ # if you want to use a bind folder
 
     ports:
-      - '5432:5432'
+      - '${DATABASE_PORT}:${DATABASE_PORT}'
     networks:
       - psutarchiveapi
       
@@ -59,7 +50,7 @@ services:
     image: adminer
     restart: unless-stopped
     ports:
-      - '8080:8080'
+      - '${ADMINER_PORT}:${ADMINER_PORT}'
     environment:
       - ADMINER_DEFAULT_SERVER=psutarchiveapiDB
     networks:
