@@ -7,11 +7,7 @@ services:
       dockerfile: Dockerfile
     image: psutarchiveapi:development
     restart: unless-stopped
-    env_file: .env
     environment:
-      JWT_SECRET: ${JWT_SECRET}
-      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
-      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
       NODE_ENV: development
       DATABASE_CLIENT: sqlite
     volumes:
