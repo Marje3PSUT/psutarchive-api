@@ -39,19 +39,7 @@ yarn build
    ```sh
    docker compose -f docker-compose.yml up
    ```
-
-### Build and run production using Docker 🐋 (PostgreSQL)
-
-1. Make sure Docker is installed on your system, or get it [from here](https://docs.docker.com/get-docker/).
-
-2. Generate random base64 strings ([from here](https://generate.plus/en/base64)) then replace 'tobemodified' in `.env.example` with these strings. Then rename it to `.env` or `cat .env.example > .env`.
-
-3. Run the docker container
-
-   ```sh
-   docker compose -f docker-compose.prod.yml up
-   ```
-
+   
 ## Strapi Resources
 
 - [Resource center](https://strapi.io/resource-center) - Strapi resource center.
