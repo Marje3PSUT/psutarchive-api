@@ -12,15 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "exam",
-        "note"
-      ],
-      "required": true,
-      "default": "exam"
-    },
     "files": {
       "type": "media",
       "multiple": true,
