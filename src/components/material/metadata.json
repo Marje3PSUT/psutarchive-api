@@ -9,8 +9,9 @@
     "year": {
       "type": "integer",
       "required": true,
-      "min": 2010,
-      "max": 2023
+      "min": 2012,
+      "max": 2023,
+      "default": 2012
     },
     "semester": {
       "type": "enumeration",
