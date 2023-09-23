@@ -22,7 +22,10 @@
       "pluginOptions": {},
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "maxLength": 5,
+      "minLength": 5,
+      "regex": "[0-9]{5}"
     },
     "name_ar": {
       "type": "string",
