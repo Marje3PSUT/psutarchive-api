@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Page": {
+    "page": {
       "type": "customField",
       "options": {
         "preset": "toolbar"
