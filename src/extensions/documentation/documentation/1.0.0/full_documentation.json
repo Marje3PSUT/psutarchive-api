@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-23T15:57:49.853Z"
+    "x-generation-date": "2023-09-24T12:37:20.678Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -25,7 +25,7 @@
   },
   "servers": [
     {
-      "url": "http://0.0.0.0:1337/api",
+      "url": "http://localhost:1337/api",
       "description": "Development server"
     }
   ],
@@ -604,13 +604,6 @@
                                   "attributes": {
                                     "type": "object",
                                     "properties": {
-                                      "type": {
-                                        "type": "string",
-                                        "enum": [
-                                          "exam",
-                                          "note"
-                                        ]
-                                      },
                                       "files": {
                                         "type": "object",
                                         "properties": {
@@ -1818,13 +1811,6 @@
                                   "attributes": {
                                     "type": "object",
                                     "properties": {
-                                      "type": {
-                                        "type": "string",
-                                        "enum": [
-                                          "exam",
-                                          "note"
-                                        ]
-                                      },
                                       "files": {
                                         "type": "object",
                                         "properties": {
@@ -2543,20 +2529,12 @@
         "properties": {
           "data": {
             "required": [
-              "type",
               "files",
               "metadata",
               "material"
             ],
             "type": "object",
             "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "exam",
-                  "note"
-                ]
-              },
               "files": {
                 "type": "array",
                 "items": {
@@ -2651,19 +2629,11 @@
       "Resource": {
         "type": "object",
         "required": [
-          "type",
           "files",
           "metadata",
           "material"
         ],
         "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "exam",
-              "note"
-            ]
-          },
           "files": {
             "type": "object",
             "properties": {
@@ -3465,13 +3435,6 @@
                                 "attributes": {
                                   "type": "object",
                                   "properties": {
-                                    "type": {
-                                      "type": "string",
-                                      "enum": [
-                                        "exam",
-                                        "note"
-                                      ]
-                                    },
                                     "files": {
                                       "type": "object",
                                       "properties": {
