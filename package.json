@@ -16,7 +16,9 @@
     "@strapi/plugin-users-permissions": "4.12.4",
     "@strapi/strapi": "4.12.4",
     "better-sqlite3": "8.5.0",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "strapi-plugin-audit-log-marje3": "^1.1.4",
+    "strapi-plugin-rest-cache": "^4.2.8"
   },
   "author": {
     "name": "Mo Mansour"
