@@ -12,10 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name_ar": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "slug": {
       "type": "uid",
       "required": true,
-      "maxLength": 7
+      "maxLength": 7,
+      "targetField": "name"
     },
     "courses": {
       "type": "relation",
