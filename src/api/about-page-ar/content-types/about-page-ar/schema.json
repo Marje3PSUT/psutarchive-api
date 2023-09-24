@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "about_pages",
+  "collectionName": "about_page_ars",
   "info": {
-    "singularName": "about-page",
-    "pluralName": "about-pages",
-    "displayName": "About Page EN",
+    "singularName": "about-page-ar",
+    "pluralName": "about-page-ars",
+    "displayName": "About Page AR",
     "description": ""
   },
   "options": {
