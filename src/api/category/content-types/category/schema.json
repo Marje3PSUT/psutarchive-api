@@ -30,9 +30,9 @@
     },
     "courses": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::course.course",
-      "mappedBy": "category"
+      "mappedBy": "categories"
     }
   }
 }
