@@ -8187,10 +8187,10 @@ std-env@^3.0.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.4.3.tgz#326f11db518db751c83fd58574f449b7c3060910"
   integrity sha512-f9aPhy8fYBuMN+sNfakZV18U39PbalgjXG3lLB9WkaYTxijru61wb57V9wxxNthXM5Sd88ETBWi29qLAsHO52Q==
 
-strapi-plugin-audit-log-marje3@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-audit-log-marje3/-/strapi-plugin-audit-log-marje3-1.1.4.tgz#c1ca4db273ce0c4daaddbd55a4ae84a187ca06a1"
-  integrity sha512-/QwdGp/I0eMYyC5x+qdj+767Y9o3DTwDkjKmRRH5QwGXBObBD2s3NJJ+9ErVTqBv025zAL8j8+sCDxbHcNYGqw==
+strapi-plugin-audit-log-marje3@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-audit-log-marje3/-/strapi-plugin-audit-log-marje3-1.1.6.tgz#410df5025c8c1abfc30850637e094ec77485caf3"
+  integrity sha512-Gi5uF2EgyNnyLy0ulRlpDJf0SHEf2BbLFOdAhNNOGT+amyJcRBi8p50tft4tgnouVBzha3XVEswZPqcecXPzjQ==
   dependencies:
     "@strapi/design-system" "^1.6.3"
     "@strapi/helper-plugin" "^4.6.0"
