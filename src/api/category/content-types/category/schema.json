@@ -25,7 +25,6 @@
     "slug": {
       "type": "uid",
       "required": true,
-      "maxLength": 7,
       "targetField": "name"
     },
     "courses": {
