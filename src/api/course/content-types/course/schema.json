@@ -16,7 +16,7 @@
       "pluginOptions": {},
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "course_id": {
       "pluginOptions": {},
@@ -30,7 +30,7 @@
     "name_ar": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "recordings_url": {
       "type": "string"
