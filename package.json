@@ -8,7 +8,8 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "dev": "strapi build && strapi develop"
+    "dev": "strapi build && strapi develop",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.9",
@@ -17,7 +18,9 @@
     "@strapi/plugin-users-permissions": "4.14.2",
     "@strapi/strapi": "4.14.2",
     "better-sqlite3": "8.5.0",
+    "patch-package": "^8.0.0",
     "pg": "^8.11.3",
+    "postinstall-postinstall": "^2.1.0",
     "strapi-plugin-audit-log-marje3": "^1.1.7",
     "strapi-plugin-rest-cache": "^4.2.8"
   },
