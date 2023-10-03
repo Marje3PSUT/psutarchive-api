@@ -9,12 +9,10 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "lecture",
         "slides",
         "summary",
-        "reference",
-        "practice",
-        "review",
+        "project",
+        "assignment",
         "other"
       ],
       "required": true
