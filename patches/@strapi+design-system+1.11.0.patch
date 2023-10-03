@@ -1,0 +1,15 @@
+diff --git a/node_modules/@strapi/design-system/dist/NumberInput/NumberInput.mjs b/node_modules/@strapi/design-system/dist/NumberInput/NumberInput.mjs
+index 300d673..0984ce9 100644
+--- a/node_modules/@strapi/design-system/dist/NumberInput/NumberInput.mjs
++++ b/node_modules/@strapi/design-system/dist/NumberInput/NumberInput.mjs
+@@ -32,8 +32,8 @@ const NumberInput = React__default.forwardRef(({ size = 'M', startAction, name,
+     const generatedId = useId(id);
+     const designContext = useDesignSystem('NumberInput');
+     const locale = defaultLocale || designContext.locale;
+-    const numberParserRef = useRef(new NumberParser(locale, { style: 'decimal' }));
+-    const numberFormaterRef = useRef(new NumberFormatter(locale, { maximumFractionDigits: 20 }));
++    const numberParserRef = useRef(new NumberParser(locale, { /*style: 'decimal'*/ useGrouping: false }));
++    const numberFormaterRef = useRef(new NumberFormatter(locale, { maximumFractionDigits: 20, useGrouping: false }));
+     const [inputValue, setInputValue] = useControllableState({
+         prop(currentInputValue) {
+             const stringifiedValue = String(value);
