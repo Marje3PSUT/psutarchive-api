@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "admin_welcome_pages",
+  "info": {
+    "singularName": "admin-welcome-page",
+    "pluralName": "admin-welcome-pages",
+    "displayName": "Admin Welcome Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "Markdown",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}
