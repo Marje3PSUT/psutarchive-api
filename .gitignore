@@ -117,3 +117,4 @@ build
 .strapi-updater.json
 src/extensions/documentation/documentation/1.0.0
 types
+src/extensions/documentation/public/index.html
