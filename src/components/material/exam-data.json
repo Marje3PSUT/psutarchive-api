@@ -13,7 +13,13 @@
         "second",
         "midterm",
         "final",
-        "quiz"
+        "quiz",
+        "quiz 1",
+        "quiz 2",
+        "quiz 3",
+        "quiz 4",
+        "quiz 5",
+        "quiz 6"
       ],
       "required": true
     },
