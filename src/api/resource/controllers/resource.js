@@ -24,7 +24,6 @@ module.exports = createCoreController('api::resource.resource', ({ strapi }) => 
                     };
             })
         );
-        console.log(data)
         return { data, meta };
     },
 }));
