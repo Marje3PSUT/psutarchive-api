@@ -21,11 +21,6 @@
         "Summer"
       ],
       "required": false
-    },
-    "uploader": {
-      "type": "component",
-      "repeatable": false,
-      "component": "material.uploader"
     }
   }
 }
