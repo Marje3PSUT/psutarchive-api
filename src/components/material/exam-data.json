@@ -14,12 +14,12 @@
         "midterm",
         "final",
         "quiz",
-        "quiz 1",
-        "quiz 2",
-        "quiz 3",
-        "quiz 4",
-        "quiz 5",
-        "quiz 6"
+        "quiz_1",
+        "quiz_2",
+        "quiz_3",
+        "quiz_4",
+        "quiz_5",
+        "quiz_6"
       ],
       "required": true
     },
