@@ -42,6 +42,16 @@
       "relation": "manyToOne",
       "target": "api::course.course",
       "inversedBy": "resources"
+    },
+    "Ownership": {
+      "type": "component",
+      "repeatable": false,
+      "component": "material.note"
+    },
+    "Disclaimer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "material.disclaimer"
     }
   }
 }

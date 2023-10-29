@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_material_notes",
+  "info": {
+    "displayName": "Ownership",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    }
+  }
+}

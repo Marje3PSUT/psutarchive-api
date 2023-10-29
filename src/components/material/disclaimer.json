@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_material_disclaimers",
+  "info": {
+    "displayName": "Disclaimer"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
