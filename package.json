@@ -21,6 +21,7 @@
     "patch-package": "^8.0.0",
     "pg": "^8.11.3",
     "postinstall-postinstall": "^2.1.0",
+    "strapi-google-auth": "^0.2.1",
     "strapi-plugin-audit-log-marje3": "^1.1.7",
     "strapi-plugin-rest-cache": "^4.2.8"
   },
