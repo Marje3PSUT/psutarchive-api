@@ -10,7 +10,7 @@
       "type": "integer",
       "required": true,
       "min": 2012,
-      "max": 2023,
+      "max": 2024,
       "default": 2012
     },
     "semester": {
